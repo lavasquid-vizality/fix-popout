@@ -4,7 +4,7 @@ import { getModule } from '@vizality/webpack';
 
 const { layer } = getModule(m => m.layer && m.layerContainer);
 
-export default class extends Plugin {
+export default class FixPopout extends Plugin {
   start () {
     this.patch();
   }
